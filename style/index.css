@@ -1,4 +1,12 @@
-.container{
-    width: 100%;
-    height: auto;
+.img-logo{
+        max-height:48px; /* keeps navbar height tidy */
+        width:auto;       /* maintain aspect ratio */
+        height:auto;
+        display:block;
+        object-fit:contain;
+}
+
+/* Small screens: slightly smaller logo */
+@media (max-width:576px){
+    .img-logo{ max-height:36px; }
 }
